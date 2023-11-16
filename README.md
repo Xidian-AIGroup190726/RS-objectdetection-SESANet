@@ -1,1 +1,5 @@
 # RS-objectdetection-SESANet
+我们主要的修改在model.py还有train_oneepoch部分，使用facet model计算导数
+其中的compute_loss加入L_der.
+注意锚框的大小要通过聚类重新计算在cfg文件中
+另一方面要生成my_yolo_dataset文件夹和data文件夹以及保存权重的weights
